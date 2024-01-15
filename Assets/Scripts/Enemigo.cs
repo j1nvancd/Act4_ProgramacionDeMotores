@@ -19,10 +19,10 @@ public class Enemigo : MonoBehaviour
     {
         // Mover al enemigo verticalmente
         transform.Translate(Vector2.down * velocidadVertical * Time.deltaTime);
-
+/*
         // Mover al enemigo horizontalmente de manera aleatoria
         float velocidadHorizontal = Random.Range(velocidadHorizontalMin, velocidadHorizontalMax);
-        transform.Translate(new Vector2(velocidadHorizontal, 0f) * Time.deltaTime);
+        transform.Translate(new Vector2(velocidadHorizontal, 0f) * Time.deltaTime);*/
     }
 
     void Destruir()
