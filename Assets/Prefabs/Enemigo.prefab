@@ -174,7 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7586d9442124c6e42aac20c4616dc382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoDeVida: 10
-  velocidadVertical: 2
-  velocidadHorizontalMin: -100
-  velocidadHorizontalMax: 100
+  tiempoDeVida: 50
+  velocidadMovEjeX: 6
+  velocidadMovEjeY: 4

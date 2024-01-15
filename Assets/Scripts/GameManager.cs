@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject canvasMenu;
@@ -41,11 +41,13 @@ public class GameManager : MonoBehaviour
     
     public void ReiniciarJuego() //Reinicia el juego restableciendo contadores y ocultando el menú
     {
-        contadorEnemigos = 0;
+        
+        SceneManager.LoadScene(0);
+        /* contadorEnemigos = 0;
         tiempoDeJuego = 0f;
         ActualizarTextos();
         canvasMenu.SetActive(false); //Oculta el menú al reiniciar el juego
-        juegoPausado = false; //Reanuda el juego al reiniciar
+       */ juegoPausado = false; //Reanuda el juego al reiniciar 
         Time.timeScale = 1f;
     }
 

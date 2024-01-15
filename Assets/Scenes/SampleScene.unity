@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -598,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 401813704}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 12, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -617,13 +617,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemigoPrefab: {fileID: 1624623996322854359, guid: 3d8b059ab25db9d4182b7f01b1c53b26, type: 3}
-  limiteSuperior: {fileID: 401813705}
-  limiteInferior: {fileID: 0}
-  velocidadEnemigo: 5
   tiempoSpawnMin: 2
   tiempoSpawnMax: 4
-  areaSpawnMin: {x: -7, y: 6}
-  areaSpawnMax: {x: 7, y: 6}
+  areaSpawnMin: {x: -6, y: -4}
+  areaSpawnMax: {x: 6, y: 4}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,7 +964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1281,7 +1278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80135764be4423f4f82fdf5143e6ca9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadNormal: 5
+  velocidad: 5
   balaPrefab: {fileID: 1002108148442428622, guid: 91d7cfde458428442854977e6ee416d8, type: 3}
   puntoDisparo: {fileID: 1754209840}
   velocidadBala: 10
