@@ -10,6 +10,13 @@ public class Movimiento_Pj : MonoBehaviour
     public Transform puntoDisparo; //Punto de origen de la bala
     public float velocidadBala = 10f; //Velocidad de la bala
 
+     public float tiempoDeEspera = 1f; // Tiempo en segundos que debe esperar antes de poder disparar nuevamente
+    private float tiempoUltimoDisparo; // Almacena el tiempo del último disparo
+
+    void Start()
+    {
+        tiempoUltimoDisparo = -tiempoDeEspera;
+    }
     void Update()
     {
         ControlMovimiento();
@@ -49,9 +56,13 @@ public class Movimiento_Pj : MonoBehaviour
     void ControlDisparo()
     {
        
-        if (Input.GetMouseButtonDown(0)) //Verifica si se presiona el botón izquierdo del ratón para disparar
+        if (Input.GetMouseButtonDown(0))
         {
-            Disparar(); //Llama al método para realizar el disparo
+            if (Time.time - tiempoUltimoDisparo >= tiempoDeEspera)
+            {
+                Disparar();
+                tiempoUltimoDisparo = Time.time; // Actualiza el tiempo del último disparo
+            }
         }
     }
 
