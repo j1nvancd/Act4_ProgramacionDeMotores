@@ -58,11 +58,18 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f; //Reanuda el juego
     }
 
-    void ActualizarTextos() //Método para actualizar los textos en pantalla
-    {
-        contadorEnemigosText.text = "Enemigos destruidos: " + contadorEnemigos.ToString();
-        temporizadorText.text = "Tiempo: " + Mathf.FloorToInt(tiempoDeJuego).ToString();
-    }
+    void ActualizarTextos() // Método para actualizar los textos en pantalla
+{
+    int minutos = Mathf.FloorToInt(tiempoDeJuego / 60); // Calcular los minutos
+    int segundos = Mathf.FloorToInt(tiempoDeJuego % 60); // Calcular los segundos
+    int centesimas = Mathf.FloorToInt((tiempoDeJuego * 100) % 100); // Calcular las centésimas
+
+    contadorEnemigosText.text = "Enemigos destruidos: " + contadorEnemigos.ToString();
+    
+    // Formatear el texto para incluir minutos, segundos y centésimas
+    temporizadorText.text = "Tiempo: " + minutos.ToString("00") + ":" + segundos.ToString("00") + ":" + centesimas.ToString("00");
+}
+
 
     public void ExitJuego() //Cierra la aplicación al hacer clic en el botón de Exit
     {

@@ -619,8 +619,8 @@ MonoBehaviour:
   enemigoPrefab: {fileID: 1624623996322854359, guid: 3d8b059ab25db9d4182b7f01b1c53b26, type: 3}
   tiempoSpawnMin: 2
   tiempoSpawnMax: 4
-  areaSpawnMin: {x: -6, y: -4}
-  areaSpawnMax: {x: 6, y: 4}
+  areaSpawnMin: {x: -8, y: -4}
+  areaSpawnMax: {x: 8, y: 4}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,6 +1282,7 @@ MonoBehaviour:
   balaPrefab: {fileID: 1002108148442428622, guid: 91d7cfde458428442854977e6ee416d8, type: 3}
   puntoDisparo: {fileID: 1754209840}
   velocidadBala: 10
+  tiempoDeEspera: 1
 --- !u!212 &1754209839
 SpriteRenderer:
   m_ObjectHideFlags: 0
